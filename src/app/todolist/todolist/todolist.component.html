@@ -1,0 +1,9 @@
+<mat-list fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+  <mat-card fxFlex="300px" *ngFor="let todo of todos">
+    <h1>{{todo.name}}</h1>
+    <app-todo-item
+    [prograss]="todo.prograss"
+    [total]="todo.total">
+  </app-todo-item>
+  </mat-card>
+</mat-list>
